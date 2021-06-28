@@ -1,0 +1,328 @@
+:root {
+    --gold: #ee9510;
+    --yellow: #efae17;
+    --d-yellow: #b45d0f;
+    --gray: #121212;
+    --red: #a01010;
+    --d-red: #840a0b;
+    --l-red: #df2929;
+    --blue: #101253;
+    --l-blue: #422092;
+}
+
+.fondo {
+    background: rgb(24, 68, 177);
+}
+
+
+/* Títulos */
+
+.title {
+    margin-top: -1rem;
+    margin-left: -1.5rem;
+    filter: blur(4px) brightness(55%);
+    -webkit-filter: blur(4px) brightness(4px);
+    width: 110%;
+}
+
+.cover {
+    height: 15rem;
+}
+
+.cover h2 {
+    z-index: 2;
+}
+
+.blur {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+
+/*Navbar clases*/
+
+.navbar {
+    font-size: 1.5rem;
+    height: 6rem;
+    transition: all .5s ease;
+}
+
+.navbar a {
+    color: rgb(247, 240, 240);
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+
+.navbar a:hover,
+.scrolling-active nav a:hover {
+    color: var(--gold);
+}
+
+.navbar-brand {
+    padding-left: 0;
+    margin: auto 0;
+    transition: all 0.5s ease-out;
+}
+
+.aldycon-ps img {
+    opacity: 0%;
+    width: 3rem!important;
+    transition: all 0.5s ease-out;
+}
+
+.aldycon-pi {
+    color: rgb(247, 240, 240) !important;
+    border-radius: 1rem;
+    margin-left: 0rem !important;
+    font-size: 3rem;
+    transition: all 0.5s ease-out;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 0.5s ease-out;
+}
+
+.scrolling-active .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 0.5s ease-out;
+}
+
+.scrolling-active nav {
+    height: 4rem;
+    background-color: black;
+    color: white;
+    transition: all .5s ease;
+}
+
+.scrolling-active nav a {
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.5s ease-out;
+}
+
+.scrolling-active .aldycon-ps img {
+    opacity: 100%;
+    width: 2rem !important;
+    height: 2.5rem !important;
+    transition: all 0.5s ease-out;
+}
+
+.scrolling-active .aldycon-pi {
+    color: white !important;
+    background: transparent;
+    font-size: 2rem;
+    transition: all 0.5s ease-out;
+}
+
+.scrolling-active .navbar-brand {
+    transition: all 0.5s ease-out;
+}
+
+
+/*Cover clases*/
+
+#cover {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #422092;
+}
+
+.texto-cover {
+    padding-top: 3rem;
+    color: white;
+    text-align: justify;
+}
+
+.img-cover {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/*Sobre nosotros clases*/
+
+.sobre-nosotros p {
+    text-align: justify !important;
+}
+
+.sobre-nosotros h3 {
+    text-align: center;
+}
+
+.row-sn {
+    background-color: black;
+}
+
+.row-mv,
+.row-vf {
+    padding: 0 5%;
+}
+
+.row-vf {
+    background-color: rgb(29, 26, 26);
+    color: white;
+}
+
+.col-img img {
+    width: 110% !important;
+}
+
+.col-img-2 img {
+    padding-left: 15%;
+    width: 90% !important;
+}
+
+
+/* FOOTER */
+
+.bgd {
+    background: #121212;
+}
+
+footer {
+    margin-top: -0.35rem;
+    background: #121212;
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+    border-top: 5px solid var(--red) !important;
+    position: relative;
+    z-index: 2;
+    align-self: flex-end;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    transition: 0.5s all;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.f-bottom {
+    background: #030425;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 30;
+}
+
+.bg {
+    background-color: rgb(236, 234, 234);
+}
+
+.row2 {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 label {
+    margin-top: -3px;
+    margin-left: 8px;
+    max-width: 140px;
+}
+
+.ico {
+    color: #EE9510;
+}
+
+.ico:hover {
+    text-decoration: none;
+    color: #422092;
+}
+
+
+/* Contacto form */
+
+.contact .input-group {
+    flex-wrap: nowrap;
+}
+
+.form-control {
+    box-shadow: none !important;
+    border: 0 !important;
+    border-bottom: 2px solid var(--blue) !important;
+    /* background-color: #8badb833; */
+    transition: color 0.35s;
+}
+
+.form-control:focus {
+    border: 0 !important;
+    border-bottom: 2px solid var(--blue) !important;
+    /* background-color: #8badb833; */
+}
+
+.input-group-text {
+    border: 0 !important;
+    color: white;
+    background-color: var(--gray);
+}
+
+.has-float-label {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.has-float-label label {
+    color: var(--l-blue) !important;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)+* {
+    font-size: 100% !important;
+    top: 0.6em;
+    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.form-control:focus+label,
+.form-control:active+label {
+    color: var(--l-blue) !important;
+    z-index: 5;
+}
+
+.form-control:invalid {
+    /* background-color: #e98b9455 !important; */
+    color: var(--red) !important;
+}
+
+.form-control:invalid+label {
+    /* background-color: var(--red) !important; */
+    /* color: white !important; */
+    color: var(--l-red) !important;
+}
+
+.send {
+    background-color: var(--blue);
+    border: 0;
+    transition: all 0.15s;
+}
+
+.redes a {
+    color: white;
+    transition: all 0.35s;
+}
+
+.redes a:hover {
+    opacity: 0.7;
+}
+
+.redes i {
+    color: white;
+}
+
+.send:hover {
+    background-color: #3c788b;
+}
+
+.redes a:hover {
+    color: rgba(255, 255, 255, 1);
+}
